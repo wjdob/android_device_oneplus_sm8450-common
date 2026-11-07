@@ -1,26 +1,17 @@
-# WAIPIO kernel 6.6 integration
+# Experimental WAIPIO kernel 6.6 configuration
 
-Ferrari opts into this configuration with `TARGET_USES_KERNEL_6_6 := true`
-before including BoardConfigCommon.mk. The other devices retain their
-existing kernel selection until their board overlays are ported.
+**Native25 and Package-23b use kernel 5.10.246.** This directory contains separate
+6.6 build configuration for experimental builds.
 
-The Android build uses its existing Make/Kbuild integration, with sources
-in kernel/oneplus/sm8750, sm8750-modules and sm8750-devicetrees. It does
-not require a Bazel workspace. All three repositories must contain the
-WAIPIO/Ferrari bring-up commits. The kernel's vendor DTS link selects the
-relocated devicetrees repository.
+A device using this configuration sets `TARGET_USES_KERNEL_6_6 := true` before
+including `BoardConfigCommon.mk`. It needs matching WAIPIO/Ferrari changes in
+`kernel/oneplus/sm8750`, `sm8750-modules` and `sm8750-devicetrees`.
+The build uses Android Make/Kbuild integration.
 
-Ferrari selects WAIPIO v1/v2 bases for dtb.img and its combined board,
-audio, display and camera overlay for dtbo.img. Do not add the old split
-techpack overlays to the new combined overlay.
+Ferrari's 6.6 configuration selects WAIPIO v1/v2 base device trees and the combined
+board/audio/display/camera overlay. Keep those overlays and module lists matched
+to the 6.6 source. The combined overlay replaces the older split techpack overlays.
 
-The module lists use the 6.6 declared output names, with the kernel's
-first-stage inventory for vendor boot and extra display/touch/charger
-modules available in recovery. Module dependencies are collected from
-the built modules. These lists are build inputs, not artifacts from a
-successful full Bazel or Android image build. Missing modules and unknown
-symbols remain build errors; they are not ignored.
-
-Validation during integration: Android variable evaluation, merged kernel
-configuration and native `dtbs` compilation. A full Android kernel/module
-build and a Ferrari boot test are still required.
+Full Android kernel/module build and device-boot testing for this 6.6 configuration
+remain incomplete. Use the release's [documented 5.10 source](https://github.com/wjdob/lineageos-realmegt2pro/blob/lineage-24.0/SOURCES.md)
+when inspecting or reproducing Native25.
