@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "lineageos": "24.0",
+  "release": "Native25",
+  "upstream": "https://github.com/pjgowtham/android_device_oneplus_sm8450-common",
+  "upstream_revision": "f19d74ba3859298e56c2a139f415003b379a6320",
+  "recipe_sha256": "0535a86ff7972007680b67d57d10a62d89309b0371a043c7313c193f2a576cea",
+  "release_source": "https://github.com/wjdob/lineageos-realmegt2pro/tree/lineage-24.0/source/lineage-24.0",
+  "files": [
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c3f326ed28f33436be520c9b29d205f84a01336db227422545e3f047d4b4c396"
+    },
+    {
+      "path": "common.mk",
+      "sha256": "24ce1d4cde80b657cd94cbb63622c8834a68bd502965e84584f4f9b6b807f168"
+    },
+    {
+      "path": "init/init_oplus.cpp",
+      "sha256": "d6dfd47874a1e1cfb3791016d4cd0587b43f031dd576e1f59dcc2fae01f1b373"
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "28cfae2e3334ac5cc4c6fd0ae0029613918ba4d933d6e44df409624804c15604"
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7643bec232f899d83506fed5d25ae470eb22dd07c84a103b26d8e19077194227"
+    },
+    {
+      "path": "modules.load.vendor_boot",
+      "sha256": "c2e34884e4693d70b0406bb2cc77601b9c2391223636362be97c4b8dfa2bd08d"
+    }
+  ],
+  "patches": [
+    {
+      "path": "patches/lineage-24.0/0002-common-lineage-integration.patch",
+      "sha256": "50836f0629835d4bb9d5dbe4151211564b2925fe227838674a907a8bb415e684"
+    },
+    {
+      "path": "patches/lineage-24.0/0006-common-tinyxml-v34-provider.patch",
+      "sha256": "0e1a11f33b968c37c86fa5c2eea3f1bb5ee703d2517af0a5a858c0786fe8752b"
+    },
+    {
+      "path": "patches/lineage-24.0/0012-ferrari-report-missing-bootloader-state.patch",
+      "sha256": "095b02610831589ea8f87be923e876024e92001ccc58dcb7416973bf9f0cbd05"
+    },
+    {
+      "path": "patches/lineage-24.0/0024-common-extract-vendor-interface-scope.patch",
+      "sha256": "f063b238b5b4906c5c1c1c36961fb1eeb03c0d629956fa68062f8a86d6027387"
+    },
+    {
+      "path": "patches/lineage-24.0/0028-common-pixelworks-make-export-scope.patch",
+      "sha256": "7d06db6acc11316bb0e8f9bb9a22df7483115f2c0110de45c1f658ba56e543d3"
+    },
+    {
+      "path": "patches/lineage-24.0/0032-common-face-camera-ndk-linkage.patch",
+      "sha256": "bcd80a4b146ff2e1919b941528c324c4661fe23ae3e797e964f6fa28c4dc8635"
+    },
+    {
+      "path": "patches/lineage-24.0/0033-common-codec2-allocation.patch",
+      "sha256": "341536a38898151f0b0f31bcc78bd04d6312043cbabc13ac6dddc8286a56b859"
+    },
+    {
+      "path": "patches/lineage-24.0/0035-common-enable-masc-elf-check.patch",
+      "sha256": "6b2a5d5e89afaa7ace0147dcd47a5da187ef6f0588a820254b428b19fcb11b12"
+    },
+    {
+      "path": "patches/lineage-24.0/0039-common-early-hardware-rng.patch",
+      "sha256": "ea76e4908eb3179bbb2a222e1e64bb1330baba586195d07629a4a9c778a84d07"
+    },
+    {
+      "path": "patches/lineage-24.0/0041-common-performance-xml-extraction.patch",
+      "sha256": "d80790defd9d3f1e5e2b29e4c2d843f42efee5711b52e6921ee7f86ccc76e409"
+    },
+    {
+      "path": "patches/lineage-24.0/0049-common-sm8450-taro-power-hints.patch",
+      "sha256": "5b7d87b1c77682092a067fb7c1e6a6fbde5fdd19774efbcb495ce5e991aa6dfa"
+    }
+  ],
+  "limits": "Source-content equivalence to the released recipe. This repository split has not produced a new native build or device test."
+}
