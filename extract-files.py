@@ -36,6 +36,9 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
         'com.qualcomm.qti.dpm.api@1.0',
+        'vendor.oplus.hardware.olc2-V1-ndk_platform',
+        'vendor.oplus.hardware.radio-V2-ndk_platform',
+        'vendor.oplus.hardware.cwb@1.0',
         'libmmosal',
         'vendor.qti.diaghal@1.0',
         'vendor.qti.hardware.dpmservice@1.0',
