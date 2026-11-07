@@ -80,6 +80,9 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('blob-patches/PowerOffAlarm.patch'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
+    # The selected source renames wfdservice64 to the 64-bit wfdservice.
+    'system_ext/etc/init/wfdservice.rc': blob_fixup()
+        .regex_replace('service wfdservice64 /system_ext/bin/wfdservice64', 'service wfdservice64 /system_ext/bin/wfdservice'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
     'vendor/bin/qguard': blob_fixup()
