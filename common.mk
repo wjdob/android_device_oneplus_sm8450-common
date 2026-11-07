@@ -273,6 +273,10 @@ PRODUCT_COPY_FILES += \
 BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
+# Legacy vendor XMLDocument ABI (platform TinyXML2 11 has a larger layout)
+PRODUCT_PACKAGES += \
+    libtinyxml2-v34
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
