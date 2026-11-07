@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "lineageos": "23.2",
+  "release": "Package-23b",
+  "upstream": "https://github.com/pjgowtham/android_device_oneplus_sm8450-common",
+  "upstream_revision": "8b8694732bf21cde0e1186cfe73da5f1526cdef3",
+  "recipe_sha256": "030ad752dfbfd67bed4744bddd3921cb8e70884b67a7dc15f64a93d582baed45",
+  "release_source": "https://github.com/wjdob/lineageos-realmegt2pro/tree/lineage-23.2/source",
+  "files": [
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "69571851f8b24874caf2066738208f988344d3820d855b8d4d6a3354bc859fb9"
+    },
+    {
+      "path": "common.mk",
+      "sha256": "3e86349278f315d5e0c561de9b129259e125a83ac681b70793996d7f751ec22a"
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "00bbf486dba494178a3bf640d04402fd59e3ecba9b1d9296a729df7e3fead848"
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "82a4144b643a1e775802dc747d9fe527376d74b283481ed62cb7fef500f81456"
+    },
+    {
+      "path": "init/init_oplus.cpp",
+      "sha256": "d6dfd47874a1e1cfb3791016d4cd0587b43f031dd576e1f59dcc2fae01f1b373"
+    }
+  ],
+  "patches": [
+    {
+      "path": "patches/lineage-23.2/0001-remove-stale-vintf-conflict.patch",
+      "sha256": "70f1e31e05566491d18037cd465c3033bbedd220772b5b0ed504b1c49ff7c6ab"
+    },
+    {
+      "path": "patches/lineage-23.2/0004-common-lineage-integration.patch",
+      "sha256": "50836f0629835d4bb9d5dbe4151211564b2925fe227838674a907a8bb415e684"
+    },
+    {
+      "path": "patches/lineage-23.2/0007-common-remove-stray-audio-path.patch",
+      "sha256": "651af90c603a910f5d1d97b8abde93c3c4b50eb6f87ed24d25826fc7fcbc5aa9"
+    },
+    {
+      "path": "patches/lineage-23.2/0009-pixelworks-namespace-extract-files-py.patch",
+      "sha256": "5bd07f0dfbbf460e21e8fad59a6c73b514f91db14194ab1cae378165958a7abe"
+    },
+    {
+      "path": "patches/lineage-23.2/0013-common-interface-prebuilt-names-device.patch",
+      "sha256": "d9d7730aa30beb7628c869de414edb32efbe500834e83da28196e00e9c2455f1"
+    },
+    {
+      "path": "patches/lineage-23.2/0014-common-type-vibrator-effect-flag.patch",
+      "sha256": "38bc19592171a94ca1fdc2f473c1b673f7e85f8e4deeececb7a8cef7e5063c60"
+    },
+    {
+      "path": "patches/lineage-23.2/0017-common-audio-config-paths.patch",
+      "sha256": "5c81a10140edb5ce00763a3845af5ff249cfbe6b5efd90a620978d809fa0f894"
+    },
+    {
+      "path": "patches/lineage-23.2/0018-common-horae-extract-fixup.patch",
+      "sha256": "858bfa6b231d6ef63fc203f8f412157a987677fed8cd166a5c093a7ae9a98804"
+    },
+    {
+      "path": "patches/lineage-23.2/0021-common-qguard-extractor-shim.patch",
+      "sha256": "cc8562447fa291742ba230bdfadba3302b3b1e2e94f2d5d2047ce25641e3c9e2"
+    },
+    {
+      "path": "patches/lineage-23.2/0023-common-qccsyshal-protobuf-fixup.patch",
+      "sha256": "a82552941faa739a116473b018c8ce6bb5d82f5559d79fba364f5bb97798ee32"
+    },
+    {
+      "path": "patches/lineage-23.2/0025-common-export-pixelworks-namespace.patch",
+      "sha256": "fba083161d9c907667454f6d73cc701a1c639a583421b287531985c0229129f5"
+    },
+    {
+      "path": "patches/lineage-23.2/0026-common-tinyxml-v34-fixup.patch",
+      "sha256": "9630ade3c33b108ecc8a819141111ceab8053b5e8772bc606fbe70aca6eb6fe0"
+    },
+    {
+      "path": "patches/lineage-23.2/0028-common-tinyxml-v34-provider.patch",
+      "sha256": "fd594232825ed6f101bd8092c7993d8792319bd3a60aa5844c998761887faec8"
+    },
+    {
+      "path": "patches/lineage-23.2/0030-sm8450-wfd-init-extraction.patch",
+      "sha256": "48fae1b922bc48f4694445e924b693e8c0c836673be412f5ca8c6d2e8694db9a"
+    },
+    {
+      "path": "patches/lineage-23.2/0036-ferrari-report-missing-bootloader-state.patch",
+      "sha256": "095b02610831589ea8f87be923e876024e92001ccc58dcb7416973bf9f0cbd05"
+    },
+    {
+      "path": "patches/lineage-23.2/0106-common-codec2-store-allocation.patch",
+      "sha256": "f1f8c21889e7cfab7b6f55c117271cf3cba1f7ff387c73e79b8d83e9ab4bc377"
+    }
+  ],
+  "limits": "Source-content equivalence to the released recipe. This repository split has not produced a new native build or device test."
+}
