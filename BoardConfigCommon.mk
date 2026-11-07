@@ -211,3 +211,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/sm8450-common/BoardConfigVendor.mk
+
+# Lineage platform policy and kernel/Soong configuration.
+include device/lineage/sepolicy/common/sepolicy.mk
+include device/lineage/sepolicy/qcom/sepolicy.mk
+include vendor/lineage/config/BoardConfigLineage.mk
