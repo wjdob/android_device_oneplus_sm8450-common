@@ -49,6 +49,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/lib64/libface3d_dev.so': blob_fixup()
+        .binary_regex_replace(rb'libcamera2ndk_vendor\.so\x00', b'libcamera2ndk_realme.so\x00'),
     'system_ext/bin/horae': blob_fixup()
         .replace_needed('libprotobuf-cpp-lite.so', 'libprotobuf-cpp-lite-21.7.so'),
     'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
